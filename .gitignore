@@ -1,0 +1,5 @@
+dist/
+node_modules/
+functions/_catalog.js
+.wrangler/
+.DS_Store

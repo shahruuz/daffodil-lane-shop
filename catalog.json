@@ -3,12 +3,42 @@
     "name": "Daffodil Lane",
     "tagline": "Handmade keepsakes for readers, nurses, mamas, and anyone who needs a gentle reminder.",
     "currency": "usd",
-    "shipping": { "flatCents": 500, "freeOverCents": 3500, "countries": ["US"] }
+    "shipping": {
+      "flatCents": 500,
+      "freeOverCents": 3500,
+      "countries": [
+        "US"
+      ]
+    },
+    "email": "hello@thedaffodillane.com",
+    "city": "El Paso, Texas",
+    "processing": "3 to 5 business days",
+    "returnDays": 14,
+    "announcement": {
+      "enabled": true,
+      "text": "Holiday orders: order by December 12 for delivery before Christmas.",
+      "link": "/gifts/",
+      "linkText": "Gift guides",
+      "until": "2026-12-13"
+    },
+    "newsletter": true
   },
   "collections": [
-    { "slug": "bookmarks", "name": "Bookmarks", "blurb": "Personalized notes for your favorite stories." },
-    { "slug": "keychains", "name": "Keychains", "blurb": "Handcrafted keepsakes for your daily journey." },
-    { "slug": "apparel", "name": "Apparel", "blurb": "Comfortable pieces for your everyday life." }
+    {
+      "slug": "bookmarks",
+      "name": "Bookmarks",
+      "blurb": "Personalized notes for your favorite stories."
+    },
+    {
+      "slug": "keychains",
+      "name": "Keychains",
+      "blurb": "Handcrafted keepsakes for your daily journey."
+    },
+    {
+      "slug": "apparel",
+      "name": "Apparel",
+      "blurb": "Comfortable pieces for your everyday life."
+    }
   ],
   "products": [
     {
@@ -22,8 +52,35 @@
         "https://static.wixstatic.com/media/bdd293_a392821175994ea2ad694d6686669803~mv2.jpg",
         "https://static.wixstatic.com/media/bdd293_7daef4d7857e494d9f93bc63f9e9ddbc~mv2.jpg"
       ],
-      "options": [],
-      "personalization": { "label": "Name to add", "placeholder": "e.g. Maya", "maxLength": 20, "note": "Tell us your font, colors, and ribbon or tassel preference in the notes at checkout." }
+      "options": [
+        {
+          "name": "Lettering",
+          "values": [
+            "Script",
+            "Serif",
+            "Print"
+          ]
+        },
+        {
+          "name": "Finish",
+          "values": [
+            "Ribbon",
+            "Tassel"
+          ]
+        }
+      ],
+      "personalization": {
+        "label": "Name to add",
+        "placeholder": "e.g. Maya",
+        "maxLength": 20,
+        "note": "Up to 20 characters. Tell us your colors in the maker's notes at checkout."
+      },
+      "tags": [
+        "reader",
+        "personalized",
+        "under-20"
+      ],
+      "preview": true
     },
     {
       "id": "232810a4-5ac2-40f1-a308-8967c1278f4e",
@@ -32,8 +89,24 @@
       "collection": "bookmarks",
       "price": 600,
       "description": "Heavy cardstock bookmark with a matte finish, printed with watercolor wildflowers and a mental health reminder.",
-      "images": ["https://static.wixstatic.com/media/bdd293_847e437e1f264cc2b3bde236eb33f441~mv2.jpg"],
-      "options": [{ "name": "Style", "values": ["Growth", "Rest"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_847e437e1f264cc2b3bde236eb33f441~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Style",
+          "values": [
+            "Growth",
+            "Rest"
+          ]
+        }
+      ],
+      "tags": [
+        "reader",
+        "self-care",
+        "under-20",
+        "stocking"
+      ]
     },
     {
       "id": "ddc46159-54b9-4221-a4ad-2dc773b4e5ea",
@@ -42,8 +115,24 @@
       "collection": "bookmarks",
       "price": 900,
       "description": "Laser-cut birch wood bookmark with a delicate floral motif, sanded smooth and finished with a silk ribbon tassel.",
-      "images": ["https://static.wixstatic.com/media/bdd293_35acf18d9d784d028d925b1c775cf70b~mv2.jpg"],
-      "options": [{ "name": "Tassel color", "values": ["Cream", "Dusty Rose", "Sky Blue"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_35acf18d9d784d028d925b1c775cf70b~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Tassel color",
+          "values": [
+            "Cream",
+            "Dusty Rose",
+            "Sky Blue"
+          ]
+        }
+      ],
+      "tags": [
+        "reader",
+        "under-20",
+        "stocking"
+      ]
     },
     {
       "id": "90242a33-be61-4687-be18-86be746df982",
@@ -52,8 +141,23 @@
       "collection": "bookmarks",
       "price": 1500,
       "description": "Hand-stitched vegetable-tanned leather bookmark that develops its own patina over time, with an optional debossed monogram.",
-      "images": ["https://static.wixstatic.com/media/bdd293_1760a655f3af4a489c1e6fa3ad9424aa~mv2.jpg"],
-      "options": [{ "name": "Leather shade", "values": ["Tan", "Chocolate"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_1760a655f3af4a489c1e6fa3ad9424aa~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Leather shade",
+          "values": [
+            "Tan",
+            "Chocolate"
+          ]
+        }
+      ],
+      "tags": [
+        "reader",
+        "personalized",
+        "under-20"
+      ]
     },
     {
       "id": "8156e9a6-eccc-4cb3-85bb-aee6862f4a22",
@@ -62,8 +166,26 @@
       "collection": "keychains",
       "price": 1200,
       "description": "Round acrylic keychain etched with a daily affirmation to remind you to slow down, backed in a soft matte pastel.",
-      "images": ["https://static.wixstatic.com/media/bdd293_b461c22e3b4547c5a076f201a6b53b71~mv2.jpg"],
-      "options": [{ "name": "Color", "values": ["Sage", "Lavender", "Blush"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_b461c22e3b4547c5a076f201a6b53b71~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "Sage",
+            "Lavender",
+            "Blush"
+          ]
+        }
+      ],
+      "tags": [
+        "self-care",
+        "nurse",
+        "mama",
+        "under-20",
+        "stocking"
+      ]
     },
     {
       "id": "ad139d15-1611-47d5-b380-434b86de4f7a",
@@ -72,8 +194,24 @@
       "collection": "keychains",
       "price": 1800,
       "description": "Handcrafted resin charm with dried daisy petals and gold flakes, on a lightweight gold-plated lobster clasp for keys or bags.",
-      "images": ["https://static.wixstatic.com/media/bdd293_05e4fd5b2853447e966987e2a3e58c04~mv2.jpg"],
-      "options": [{ "name": "Design", "values": ["Clear", "Opaque"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_05e4fd5b2853447e966987e2a3e58c04~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Design",
+          "values": [
+            "Clear",
+            "Opaque"
+          ]
+        }
+      ],
+      "tags": [
+        "self-care",
+        "mama",
+        "under-20",
+        "stocking"
+      ]
     },
     {
       "id": "ed69abd5-7f34-43b9-bcd0-44f5d66ef1e9",
@@ -82,8 +220,21 @@
       "collection": "keychains",
       "price": 2200,
       "description": "Brushed metal heart tag that clips onto a badge lanyard or stethoscope, with a minimalist engraved medical symbol.",
-      "images": ["https://static.wixstatic.com/media/bdd293_3b438780a3814ae7aea976833c0423c1~mv2.jpg"],
-      "options": [{ "name": "Finish", "values": ["Gold", "Silver"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_3b438780a3814ae7aea976833c0423c1~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Finish",
+          "values": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "tags": [
+        "nurse"
+      ]
     },
     {
       "id": "9b8707e6-3531-4815-9c04-786640655a81",
@@ -92,8 +243,30 @@
       "collection": "apparel",
       "price": 3500,
       "description": "Lightweight organic cotton crewneck with a calm, nature-inspired graphic. Made for slow afternoons and easy stretching.",
-      "images": ["https://static.wixstatic.com/media/bdd293_24b19dfa6747492482045eb167ce5abc~mv2.jpg"],
-      "options": [{ "name": "Fit", "values": ["Standard", "Oversized"] }, { "name": "Color", "values": ["Mint", "Peach", "Cream"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_24b19dfa6747492482045eb167ce5abc~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Fit",
+          "values": [
+            "Standard",
+            "Oversized"
+          ]
+        },
+        {
+          "name": "Color",
+          "values": [
+            "Mint",
+            "Peach",
+            "Cream"
+          ]
+        }
+      ],
+      "tags": [
+        "self-care",
+        "mama"
+      ]
     },
     {
       "id": "273a249a-45b0-4e0c-901f-8d8400d53e67",
@@ -102,8 +275,29 @@
       "collection": "apparel",
       "price": 3200,
       "description": "Breathable poly-cotton tee in a relaxed fit, built for long shifts, with a small type design at the pocket.",
-      "images": ["https://static.wixstatic.com/media/bdd293_1b6abdcf72844eacb5c6240d116cd347~mv2.jpg"],
-      "options": [{ "name": "Size", "values": ["XS", "S", "M"] }, { "name": "Print color", "values": ["Navy", "Beige"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_1b6abdcf72844eacb5c6240d116cd347~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M"
+          ]
+        },
+        {
+          "name": "Print color",
+          "values": [
+            "Navy",
+            "Beige"
+          ]
+        }
+      ],
+      "tags": [
+        "nurse"
+      ]
     },
     {
       "id": "3bea243b-b590-4c73-9885-e8de3f89b01d",
@@ -112,8 +306,123 @@
       "collection": "apparel",
       "price": 2800,
       "description": "Ultra-soft ring-spun cotton tee in a relaxed cut, with a minimalist line drawing of botanicals.",
-      "images": ["https://static.wixstatic.com/media/bdd293_4bf748bad5f5416aa1dc5ef7966e6df7~mv2.jpg"],
-      "options": [{ "name": "Size", "values": ["S", "M", "L"] }, { "name": "Shirt color", "values": ["White", "Grey"] }]
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_4bf748bad5f5416aa1dc5ef7966e6df7~mv2.jpg"
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "values": [
+            "S",
+            "M",
+            "L"
+          ]
+        },
+        {
+          "name": "Shirt color",
+          "values": [
+            "White",
+            "Grey"
+          ]
+        }
+      ],
+      "tags": [
+        "mama"
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "slug": "nurses",
+      "name": "For nurses",
+      "title": "Gifts for nurses",
+      "tag": "nurse",
+      "intro": "Small, useful things for the people working twelve-hour shifts. A tag that clips to a badge or stethoscope, a tee that breathes, and a pocket reminder to sit down when the shift is over.",
+      "tip": "Buying for a whole unit for Nurses Week or the holidays? We take team orders.",
+      "tipLink": "/bulk-orders/",
+      "tipLinkText": "Plan a team order"
+    },
+    {
+      "slug": "new-moms",
+      "name": "For new mamas",
+      "title": "Gifts for new moms",
+      "tag": "mama",
+      "intro": "For the early weeks and the long nights. Soft tees, a charm for the diaper bag keys, and a token that says what she needs to hear: rest is part of the work.",
+      "tip": "Shopping for a baby shower? Add a gift message at checkout and send it straight to her door.",
+      "tipLink": "/faq/#gift",
+      "tipLinkText": "How gift notes work"
+    },
+    {
+      "slug": "book-lovers",
+      "name": "For book lovers",
+      "title": "Gifts for book lovers",
+      "tag": "reader",
+      "intro": "Bookmarks they'll keep for years: wood, leather, acrylic with their name on it, or a card one with a gentle reminder. Easy to mail, easy to love.",
+      "tip": "Running a book club? Matching bookmarks for every member make a good first-meeting gift.",
+      "tipLink": "/bulk-orders/",
+      "tipLinkText": "Ask about group orders"
+    },
+    {
+      "slug": "self-care",
+      "name": "Self-care gifts",
+      "title": "Self-care gifts",
+      "tag": "self-care",
+      "intro": "For the friend who keeps everyone else going. Pocket-sized reminders to breathe, rest and go slow, plus a tee made for slow afternoons.",
+      "tip": "Pair a Self Care Token with a Gentle Reminders Bookmark for an easy gift under $20.",
+      "tipLink": "/products/self-care-token/",
+      "tipLinkText": "See the token"
+    },
+    {
+      "slug": "stocking-stuffers",
+      "name": "Stocking stuffers",
+      "title": "Stocking stuffers under $20",
+      "tag": "stocking",
+      "intro": "Little handmade things that fit in a stocking or a card. Everything here is under $20.",
+      "tip": "Orders over $35 ship free in the US, so a few small gifts together ship at no cost.",
+      "tipLink": "/shipping-returns/",
+      "tipLinkText": "Shipping details"
+    }
+  ],
+  "faq": [
+    {
+      "id": "timing",
+      "q": "How long until my order ships?",
+      "a": "Every piece is made or finished by hand after you order. Most orders ship within 3 to 5 business days, then take a few days in transit within the US."
+    },
+    {
+      "id": "holiday",
+      "q": "When should I order for the holidays?",
+      "a": "Order by December 12 for delivery before Christmas within the US. Orders placed after that are made as fast as we can, but we can't promise holiday delivery."
+    },
+    {
+      "id": "shipping",
+      "q": "How much is shipping?",
+      "a": "Shipping is a flat $5 per order within the US, and free on orders over $35. We don't ship outside the US yet."
+    },
+    {
+      "id": "gift",
+      "q": "Can I send an order as a gift?",
+      "a": "Yes. At checkout, write your note in the gift message box and enter the recipient's shipping address. We'll include your message with the order."
+    },
+    {
+      "id": "personalize",
+      "q": "How does personalization work?",
+      "a": "On personalized items, type the name on the product page and pick your options. Use the maker's notes box at checkout for colors or anything else. We make it exactly as written, so please double-check spelling."
+    },
+    {
+      "id": "returns",
+      "q": "What if something arrives damaged or wrong?",
+      "a": "Email us within 14 days of delivery with your order number and a photo and we'll make it right. Personalized pieces can't be returned for a change of mind, but we always fix our own mistakes."
+    },
+    {
+      "id": "bulk",
+      "q": "Do you make team or event orders?",
+      "a": "Yes. Nurse units, baby showers, book clubs, schools and small businesses order matching sets. Tell us what you need on the team orders page and we'll reply with a quote."
+    },
+    {
+      "id": "pay",
+      "q": "Is checkout secure?",
+      "a": "Payments are processed by Stripe on its secure checkout page. We never see or store your card number."
     }
   ]
 }
