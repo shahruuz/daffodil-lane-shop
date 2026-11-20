@@ -1,0 +1,9 @@
+{
+  "name": "Daffodil Lane",
+  "short_name": "Daffodil Lane",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#f2c230",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

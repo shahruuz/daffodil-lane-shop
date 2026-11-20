@@ -1,0 +1,17 @@
+{
+  "name": "daffodil-lane-shop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node build.mjs && node --test tests/*.test.mjs",
+    "dev": "node build.mjs && wrangler dev",
+    "deploy": "node build.mjs && wrangler deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "wrangler": "^4.50.0"
+  }
+}
