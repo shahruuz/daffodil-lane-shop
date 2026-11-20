@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "daffodil-lane",
+  "main": "src/worker.js",
+  "build": { "command": "node build.mjs" },
+  "compatibility_date": "2025-11-01",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "thedaffodillane.com", "custom_domain": true },
+    { "pattern": "www.thedaffodillane.com", "custom_domain": true }
+  ],
+  "assets": { "directory": "./static", "not_found_handling": "none" },
+  "kv_namespaces": [
+    { "binding": "SHOP", "id": "REPLACE_WITH_KV_ID" }
+  ],
+  "vars": { "SITE_URL": "https://thedaffodillane.com" },
+  "observability": { "enabled": true }
+  // Secrets (set in Cloudflare, never in this file): ADMIN_PASSWORD, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET
+}

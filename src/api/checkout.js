@@ -1,12 +1,13 @@
 // POST /api/checkout  { items: [{ id, options, personalization, qty }] }  ->  { url }
 // Prices, options and stock are checked here against the catalog; the browser's numbers are never trusted.
-import { catalog, json, variantKey, cleanText, readStock } from "../_lib.js";
+import { json, variantKey, cleanText, readStock, getCatalog } from "../lib.js";
 
 const MAX_LINES = 30;
 const MAX_QTY = 20;
 
-export async function onRequestPost({ request, env }) {
+export async function checkout(request, env) {
   if (!env.STRIPE_SECRET_KEY) return json({ error: "Checkout isn't set up yet." }, 503);
+  const catalog = await getCatalog(env);
 
   let body;
   try { body = await request.json(); } catch { return json({ error: "That request didn't look right." }, 400); }
@@ -14,7 +15,7 @@ export async function onRequestPost({ request, env }) {
   if (!items.length) return json({ error: "Your bag is empty." }, 400);
   if (items.length > MAX_LINES) return json({ error: "That's a lot of items. Email us for a team order." }, 400);
 
-  const byId = Object.fromEntries(catalog.products.map(p => [p.id, p]));
+  const byId = Object.fromEntries(catalog.products.filter(p => p.active !== false).map(p => [p.id, p]));
   const lines = [];
   const stockNeed = {}; // tracked variant key -> qty
   let subtotal = 0;
@@ -102,11 +103,11 @@ export async function onRequestPost({ request, env }) {
     if (l.personalization) set(`${pre}[price_data][product_data][metadata][personalization]`, l.personalization);
   });
 
-  // Stock to lower after payment, only for tracked variants. Split across metadata keys (500 chars each).
-  const tracked = [];
-  for (const key of Object.keys(stockNeed)) if ((await readStock(env, key)) !== Infinity) tracked.push([key, stockNeed[key]]);
-  const packed = JSON.stringify(tracked);
-  for (let i = 0, n = 0; i < packed.length && n < 20; i += 480, n++) set(`metadata[stock_${n}]`, packed.slice(i, i + 480));
+  // What was bought, for the order log and for lowering stock after payment.
+  // Split across metadata keys because Stripe allows 500 characters per value.
+  const packed = JSON.stringify(lines.map(l => [l.p.id, l.qty, l.options, l.personalization]));
+  if (packed.length > 480 * 40) return json({ error: "That's a lot of items. Email us for a team order." }, 400);
+  for (let i = 0, n = 0; i < packed.length; i += 480, n++) set(`metadata[items_${n}]`, packed.slice(i, i + 480));
 
   const res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
     method: "POST",
@@ -121,6 +122,3 @@ export async function onRequestPost({ request, env }) {
   return json({ url: data.url });
 }
 
-export function onRequest() {
-  return json({ error: "Use POST." }, 405, { Allow: "POST" });
-}

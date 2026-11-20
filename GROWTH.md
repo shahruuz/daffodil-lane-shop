@@ -13,6 +13,6 @@ The site now has what these channels need (product feed, structured data, gift p
 
 5. **Instagram / Facebook.** Link posts straight to the gift guides (`/gifts/nurses/`, `/gifts/new-moms/`, `/gifts/book-lovers/`), not the home page; they convert better because the visitor lands on the right three or four items.
 6. **Team orders.** Send the `/bulk-orders/` link to El Paso hospital unit managers, baby-shower planners and local book clubs. Nurses Week (May 6–12) is the big date for the nurse items; start outreach in March.
-7. **Newsletter.** Sign-ups collect in Cloudflare KV (`sub:` keys). When there are 50+, move them to a free email tool (MailerLite, Buttondown) and send one note per month: new designs, holiday cutoffs.
+7. **Newsletter.** Sign-ups show in the dashboard (Sign-ups → Download CSV). When there are 50+, move them to a free email tool (MailerLite, Buttondown) and send one note per month: new designs, holiday cutoffs.
 8. **Stripe promo codes.** Checkout already accepts promotion codes. Create one in Stripe (Product catalog → Coupons) for newsletter subscribers or a team-order discount.
 9. **Reviews.** After the first orders, ask buyers for a photo and a line you can quote. Real reviews can then go on product pages (and into Merchant Center later).

@@ -21,7 +21,8 @@
       "linkText": "Gift guides",
       "until": "2026-12-13"
     },
-    "newsletter": true
+    "newsletter": true,
+    "heroProduct": "reading-nook-marker"
   },
   "collections": [
     {
@@ -80,7 +81,9 @@
         "personalized",
         "under-20"
       ],
-      "preview": true
+      "preview": true,
+      "featured": true,
+      "active": true
     },
     {
       "id": "232810a4-5ac2-40f1-a308-8967c1278f4e",
@@ -106,7 +109,9 @@
         "self-care",
         "under-20",
         "stocking"
-      ]
+      ],
+      "featured": true,
+      "active": true
     },
     {
       "id": "ddc46159-54b9-4221-a4ad-2dc773b4e5ea",
@@ -132,7 +137,9 @@
         "reader",
         "under-20",
         "stocking"
-      ]
+      ],
+      "featured": false,
+      "active": true
     },
     {
       "id": "90242a33-be61-4687-be18-86be746df982",
@@ -157,7 +164,9 @@
         "reader",
         "personalized",
         "under-20"
-      ]
+      ],
+      "featured": false,
+      "active": true
     },
     {
       "id": "8156e9a6-eccc-4cb3-85bb-aee6862f4a22",
@@ -185,7 +194,9 @@
         "mama",
         "under-20",
         "stocking"
-      ]
+      ],
+      "featured": true,
+      "active": true
     },
     {
       "id": "ad139d15-1611-47d5-b380-434b86de4f7a",
@@ -211,7 +222,9 @@
         "mama",
         "under-20",
         "stocking"
-      ]
+      ],
+      "featured": true,
+      "active": true
     },
     {
       "id": "ed69abd5-7f34-43b9-bcd0-44f5d66ef1e9",
@@ -234,7 +247,9 @@
       ],
       "tags": [
         "nurse"
-      ]
+      ],
+      "featured": false,
+      "active": true
     },
     {
       "id": "9b8707e6-3531-4815-9c04-786640655a81",
@@ -266,7 +281,9 @@
       "tags": [
         "self-care",
         "mama"
-      ]
+      ],
+      "featured": true,
+      "active": true
     },
     {
       "id": "273a249a-45b0-4e0c-901f-8d8400d53e67",
@@ -297,7 +314,9 @@
       ],
       "tags": [
         "nurse"
-      ]
+      ],
+      "featured": true,
+      "active": true
     },
     {
       "id": "3bea243b-b590-4c73-9885-e8de3f89b01d",
@@ -328,7 +347,9 @@
       ],
       "tags": [
         "mama"
-      ]
+      ],
+      "featured": false,
+      "active": true
     }
   ],
   "guides": [
