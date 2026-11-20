@@ -366,7 +366,7 @@ for (const p of products) {
     </div>
     <ul class="mini-trust"><li>${icons.hand} Made by hand, ships in ${esc(shop.processing)}</li><li>${icons.box} ${shipLine}</li><li>${icons.gift} Add a gift message at checkout</li></ul>
     <div class="accordion">
-      <details open><summary>Details</summary><p>${esc(p.description)}</p>${p.options.length ? `<p>Options: ${p.options.map(o => `${esc(o.name.toLowerCase())} (${o.values.map(esc).join(", ")})`).join("; ")}.</p>` : ""}</details>
+      <details open><summary>Details</summary>${p.options.length ? `<p>Choose your ${p.options.map(o => `${esc(o.name.toLowerCase())} (${o.values.map(esc).join(", ")})`).join(" and ")}.</p>` : ""}<p>Each one is made or finished by hand in ${esc(shop.city)} after you order${p.personalization ? ", lettered exactly as you type it" : ""}.</p></details>
       <details><summary>Shipping and returns</summary><p>Made to order and shipped within ${esc(shop.processing)} inside the US. Shipping is ${money(shop.shipping.flatCents)}, or free on orders over ${money(shop.shipping.freeOverCents)}. If anything arrives damaged or wrong, email us within ${shop.returnDays} days and we'll make it right. <a href="/shipping-returns/">Full policy</a></p></details>
       <details><summary>Sending it as a gift</summary><p>Enter the recipient's address at checkout and write your note in the gift message box. We'll include it with the order.</p></details>
     </div>
