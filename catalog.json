@@ -1,0 +1,119 @@
+{
+  "shop": {
+    "name": "Daffodil Lane",
+    "tagline": "Handmade keepsakes for readers, nurses, mamas, and anyone who needs a gentle reminder.",
+    "currency": "usd",
+    "shipping": { "flatCents": 500, "freeOverCents": 3500, "countries": ["US"] }
+  },
+  "collections": [
+    { "slug": "bookmarks", "name": "Bookmarks", "blurb": "Personalized notes for your favorite stories." },
+    { "slug": "keychains", "name": "Keychains", "blurb": "Handcrafted keepsakes for your daily journey." },
+    { "slug": "apparel", "name": "Apparel", "blurb": "Comfortable pieces for your everyday life." }
+  ],
+  "products": [
+    {
+      "id": "51ea0db0-02c0-4dec-8b6e-b09bad09702b",
+      "slug": "arch-acrylic-bookmark",
+      "name": "Arch Acrylic Bookmark",
+      "collection": "bookmarks",
+      "price": 1500,
+      "description": "Add a name and choose the font, colors, and a ribbon or tassel to match your style. This handmade bookmark adds charm and a little personality to your reading time. Whether for yourself or as a thoughtful gift, it blends beauty and function.",
+      "images": [
+        "https://static.wixstatic.com/media/bdd293_a392821175994ea2ad694d6686669803~mv2.jpg",
+        "https://static.wixstatic.com/media/bdd293_7daef4d7857e494d9f93bc63f9e9ddbc~mv2.jpg"
+      ],
+      "options": [],
+      "personalization": { "label": "Name to add", "placeholder": "e.g. Maya", "maxLength": 20, "note": "Tell us your font, colors, and ribbon or tassel preference in the notes at checkout." }
+    },
+    {
+      "id": "232810a4-5ac2-40f1-a308-8967c1278f4e",
+      "slug": "gentle-reminders-bookmark",
+      "name": "Gentle Reminders Bookmark",
+      "collection": "bookmarks",
+      "price": 600,
+      "description": "Heavy cardstock bookmark with a matte finish, printed with watercolor wildflowers and a mental health reminder.",
+      "images": ["https://static.wixstatic.com/media/bdd293_847e437e1f264cc2b3bde236eb33f441~mv2.jpg"],
+      "options": [{ "name": "Style", "values": ["Growth", "Rest"] }]
+    },
+    {
+      "id": "ddc46159-54b9-4221-a4ad-2dc773b4e5ea",
+      "slug": "reading-nook-marker",
+      "name": "Reading Nook Marker",
+      "collection": "bookmarks",
+      "price": 900,
+      "description": "Laser-cut birch wood bookmark with a delicate floral motif, sanded smooth and finished with a silk ribbon tassel.",
+      "images": ["https://static.wixstatic.com/media/bdd293_35acf18d9d784d028d925b1c775cf70b~mv2.jpg"],
+      "options": [{ "name": "Tassel color", "values": ["Cream", "Dusty Rose", "Sky Blue"] }]
+    },
+    {
+      "id": "90242a33-be61-4687-be18-86be746df982",
+      "slug": "embossed-leather-tab",
+      "name": "Embossed Leather Tab",
+      "collection": "bookmarks",
+      "price": 1500,
+      "description": "Hand-stitched vegetable-tanned leather bookmark that develops its own patina over time, with an optional debossed monogram.",
+      "images": ["https://static.wixstatic.com/media/bdd293_1760a655f3af4a489c1e6fa3ad9424aa~mv2.jpg"],
+      "options": [{ "name": "Leather shade", "values": ["Tan", "Chocolate"] }]
+    },
+    {
+      "id": "8156e9a6-eccc-4cb3-85bb-aee6862f4a22",
+      "slug": "self-care-token",
+      "name": "Self Care Token",
+      "collection": "keychains",
+      "price": 1200,
+      "description": "Round acrylic keychain etched with a daily affirmation to remind you to slow down, backed in a soft matte pastel.",
+      "images": ["https://static.wixstatic.com/media/bdd293_b461c22e3b4547c5a076f201a6b53b71~mv2.jpg"],
+      "options": [{ "name": "Color", "values": ["Sage", "Lavender", "Blush"] }]
+    },
+    {
+      "id": "ad139d15-1611-47d5-b380-434b86de4f7a",
+      "slug": "hope-resin-charm",
+      "name": "Hope Resin Charm",
+      "collection": "keychains",
+      "price": 1800,
+      "description": "Handcrafted resin charm with dried daisy petals and gold flakes, on a lightweight gold-plated lobster clasp for keys or bags.",
+      "images": ["https://static.wixstatic.com/media/bdd293_05e4fd5b2853447e966987e2a3e58c04~mv2.jpg"],
+      "options": [{ "name": "Design", "values": ["Clear", "Opaque"] }]
+    },
+    {
+      "id": "ed69abd5-7f34-43b9-bcd0-44f5d66ef1e9",
+      "slug": "stethoscope-heart-tag",
+      "name": "Stethoscope Heart Tag",
+      "collection": "keychains",
+      "price": 2200,
+      "description": "Brushed metal heart tag that clips onto a badge lanyard or stethoscope, with a minimalist engraved medical symbol.",
+      "images": ["https://static.wixstatic.com/media/bdd293_3b438780a3814ae7aea976833c0423c1~mv2.jpg"],
+      "options": [{ "name": "Finish", "values": ["Gold", "Silver"] }]
+    },
+    {
+      "id": "9b8707e6-3531-4815-9c04-786640655a81",
+      "slug": "breathe-in-tee",
+      "name": "Breathe In Tee",
+      "collection": "apparel",
+      "price": 3500,
+      "description": "Lightweight organic cotton crewneck with a calm, nature-inspired graphic. Made for slow afternoons and easy stretching.",
+      "images": ["https://static.wixstatic.com/media/bdd293_24b19dfa6747492482045eb167ce5abc~mv2.jpg"],
+      "options": [{ "name": "Fit", "values": ["Standard", "Oversized"] }, { "name": "Color", "values": ["Mint", "Peach", "Cream"] }]
+    },
+    {
+      "id": "273a249a-45b0-4e0c-901f-8d8400d53e67",
+      "slug": "nurses-need-rest",
+      "name": "Nurses Need Rest",
+      "collection": "apparel",
+      "price": 3200,
+      "description": "Breathable poly-cotton tee in a relaxed fit, built for long shifts, with a small type design at the pocket.",
+      "images": ["https://static.wixstatic.com/media/bdd293_1b6abdcf72844eacb5c6240d116cd347~mv2.jpg"],
+      "options": [{ "name": "Size", "values": ["XS", "S", "M"] }, { "name": "Print color", "values": ["Navy", "Beige"] }]
+    },
+    {
+      "id": "3bea243b-b590-4c73-9885-e8de3f89b01d",
+      "slug": "mama-bear-graphic",
+      "name": "Mama Bear Graphic",
+      "collection": "apparel",
+      "price": 2800,
+      "description": "Ultra-soft ring-spun cotton tee in a relaxed cut, with a minimalist line drawing of botanicals.",
+      "images": ["https://static.wixstatic.com/media/bdd293_4bf748bad5f5416aa1dc5ef7966e6df7~mv2.jpg"],
+      "options": [{ "name": "Size", "values": ["S", "M", "L"] }, { "name": "Shirt color", "values": ["White", "Grey"] }]
+    }
+  ]
+}
